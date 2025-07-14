@@ -1,0 +1,119 @@
+/* Essentials */
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-image: linear-gradient(315deg,rgba(2, 0, 36, 1) 0%, rgba(79, 0, 207, 1) 35%, rgba(140, 232, 255, 1) 100%);
+}
+
+.radioInput {
+    display: none;
+}
+
+/* Homepage */
+
+.homepage .view {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.8s ease, opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+.homepage .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo {
+    height: 50vh;
+    width: auto;
+    margin-bottom: 5vh;
+}
+
+.homeButtons {
+    margin-bottom: 10vh;
+}
+
+.homeButtons label {
+    margin: 0 5vw 0 5vw;
+}
+
+.start, .leaderboard {
+    transform: translateX(100%);
+}
+
+#view1:checked ~ .home {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1;
+}
+#view1:checked ~ .start,
+#view1:checked ~ .leaderboard {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+#view2:checked ~ .home {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+#view2:checked ~ .start {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1;
+}
+
+#view3:checked ~ .home {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+#view3:checked ~ .leaderboard {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1;
+}
+
+.homepage label {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.homepage label:hover {
+  background-color: #34495e;
+}
