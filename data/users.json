@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "username": "gaber",
+        "password_hash": "$2y$10$2R4wvwBN3N1hI8JqhQZUyejv2yP5UYO1BzBvH5z6pFZFA\/TQW987a"
+    },
+    {
+        "id": 2,
+        "username": "gabe1",
+        "password_hash": "$2y$10$J.cJbvZMFECw7Ii.aKT3BuF5DL1XRxRkwrzLRwQSmAS6Hh.TeNX5W"
+    },
+    {
+        "id": 3,
+        "username": "gabe4",
+        "password_hash": "$2y$10$ozm9GvGnfdfYlvNuWus1seqUfouijjWpqXTujifeicUYNiBUK27.K"
+    },
+    {
+        "id": 4,
+        "username": "mattm",
+        "password_hash": "$2y$10$ym3IxGE1Ks090MGD7WA6H.aBpy7lpEDHs\/6Sbg3eQqjQMsBPC3FtO"
+    }
+]
